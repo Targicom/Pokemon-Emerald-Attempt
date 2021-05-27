@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="PokemonStyleSh.css">
+    <title> Pokemon Battle!! </title>
+</head>
+<body>
+     <!-- Combat Screen -->
+     <div class="CombatSc">
+         <!-- Enemy HP, style is for exclusive stuff -->
+         <div class="HealthBox" style="left:10%; top:18%;">
+              <label id="EnemyName" class="Text" style="position:absolute; top:10%; padding-left: 10px">  </label>
+              <label id="EnemyLv" class="Text" style="position:absolute; top:10%; right:5%;"> LV </label>
+
+
+              <label class="Text" style="position:absolute; bottom:4%; right:57%; color:orangered; font-weight:800; font-size:40px"> HP </label>
+             <progress id="EnemyBar" class="HealthBar" value="10" min="0" max="10">  </progress>
+         </div>
+
+         <!-- Player HP! -->
+         <div class="HealthBox" style="right:6%; bottom:10%; height:24%; max-height:24%;">
+              <label id="PlayerName" class="Text" style="position:absolute; top:10%; padding-left: 10px">  </label>
+              <label id="PlayerLv" class="Text" style="position:absolute; top:10%; right:5%;"> LV </label>
+              <label class="Text" style="position:absolute; bottom:22.5%; right:57%; color:orangered; font-weight:800; font-size:40px"> HP </label>
+              <label id="HP Text" class="Text" style="position:absolute; bottom:3%; right:15%; font-weight:800;"> 777/777 </label>
+              <progress id="PlayerBar" class="HealthBar" value="10" min="0" max="10" style="height:25%; max-height:25%; bottom: 25%;">  </progress>
+         </div>
+     </div>
+
+     <!-- Select/Text Screen-->
+     <div class="SelectSc">
+         
+         <!-- Text Box -->
+         <div class="TextBox">
+             <p id="Game Text" class="Text">  </p>
+
+
+
+
+             <!-- Select Box -->
+             <div id="BOX" class="SelectBox">
+                 <button id="Fight" onclick="ManageUI(true, false); ManageMoves(false);"> FIGHT </button>
+                 <button id="Bag" style="right: 0%;"> BAG </button>
+                 <button id="Pokemon" style="bottom:0%; border-bottom: 5px solid black"> POKEMON </button>
+                 <button id="Run" style="bottom:0%; right:0%; border-bottom: 5px solid black" > RUN </button>
+
+
+                 <!-- Stuff In Move Selection Phase -->
+                 <button id="Back" style="bottom:0%; right:0%; border-bottom: 5px solid black" onclick="ManageMoves(true); ManageUI(false);" disabled> BACK </button>
+             </div>
+
+             <!-- Moves List -->
+             <div id="MoveC" class="MovesMenu">
+                 <button id="Move 1" onclick="StartTurn(0);"> Move 1 </button>
+                 <button id="Move 2" style=" right:0%;" onclick="StartTurn(2);"> Move 2 </button>
+                 <button id="Move 3" style=" bottom:0%; border-bottom: 5px solid black" onclick="StartTurn(1);"> Move 3 </button>
+                 <button id="Move 4" style=" bottom:0%; right:0%; border-bottom: 5px solid black" onclick="StartTurn(3);"> Move 4 </button>
+             </div>
+
+
+         </div>
+     </div>
+
+    <script src="PokeScript.js"> </script>
+</body>
+</html>

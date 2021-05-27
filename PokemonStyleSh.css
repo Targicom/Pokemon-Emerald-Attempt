@@ -1,0 +1,150 @@
+﻿/* Screens (Combat and Selection) */
+.CombatSc 
+{
+    position:absolute;
+    background-color: lightgreen;
+    width:100%;
+    max-width:100%;
+    height:75%;
+    max-height:75%;
+    top:0%;
+    left:0%;
+}
+
+
+/* Health Bars */
+.HealthBox 
+{
+    position:absolute;
+    width:18%;
+    max-width:18%;
+    height:17%;
+    max-height:17%;
+    background-color:floralwhite;
+    border: 4px solid black;
+    border-radius:15px; box-shadow: 5px 10px rgba(128, 128, 128, .5)
+}
+
+.HealthBar 
+{
+    position:absolute;
+    bottom:10%;
+    right:5%;
+    width:50%;
+    max-width:50%;
+    height:30%;
+    max-height:30%;
+    border: 4px solid black;
+}
+
+progress::-webkit-progress-value { background: green}
+
+
+/* -------------- Select SCREEN -------------*/
+.SelectSc 
+{
+    position:absolute;
+    top:75%;
+    left: 0%;
+    width:100%;
+    max-width:100%;
+    height: 25%;
+    max-height: 25%;
+    background-color:dimgray;
+}
+
+
+
+/* Where Text will appear */
+.TextBox 
+{
+    position:absolute;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+    width:98.5%;
+    max-width:98.5%;
+    height:96.5%;
+    max-height:96.5%;
+    left: 0%;
+    background-color: #6DA6A6;
+    border: 4px solid #D94A3D;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    padding-left: 5px;
+}
+
+
+
+
+/* Where the main buttons are going to show up*/
+.SelectBox {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 40%;
+    max-width: 40%;
+    height: 95.3%;
+    max-height: 95.3%;
+    background-color: floralwhite;
+    border-top-right-radius: 1.5%;
+    border: 4px solid #736984;
+    -webkit-box-shadow: 0 0 0 3px black;
+    box-shadow: 0 0 0 3px black;
+}
+
+/* Where Moves will be displayed */
+.MovesMenu 
+{
+    position:absolute;
+    top: 0%;
+    left:0%;
+    width: 59%;
+    max-width: 59%;
+    height: 95.3%;
+    max-height: 95.3%;
+    background-color: floralwhite;
+    border: 4px solid #736984;
+    -webkit-box-shadow: 0 0 0 3px black;
+    box-shadow: 0 0 0 3px black;
+}
+
+
+
+
+
+/* For the cartoony style of the "game" */
+.Text 
+{
+    font-family:'Power Red and Blue';
+    font-size: 30px;
+    font-weight:bold;
+    text-shadow: 3px 0px rgba(180,180,180,.5);
+}
+
+
+button 
+{
+    position:absolute;
+    width: 50%;
+    max-width: 50%;
+    height: 50%;
+    max-height:50%;
+    border: 5px solid black;
+    border-bottom: 3px solid black;
+    background-color: floralwhite;
+    font-family: 'Power Red and Blue';
+    font-size: 40px;
+    font-weight: bolder;
+    outline:none;
+    text-shadow: 3px 0px rgba(180,180,180,.5);
+}
+
+button:hover 
+{
+    background-color:dimgray;
+}
+
+button:disabled 
+{
+    display:none;
+}
